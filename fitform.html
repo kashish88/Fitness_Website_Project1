@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body{
+			background-color: black;
+		}
+		h1{
+			color: white;
+			background-color: red;
+			width: 28%;
+		}
+		span{
+			background-color: blue;
+		}
+		input[type=text]
+		{
+			font-size: 35px;
+			width: 40%;
+		}
+		
+		td{
+			font-size: 35px;
+			color: blue;
+			padding: 20px;
+		}
+		input[type=submit]
+		{
+			font-size: 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<center><h1>Registration Form&nbsp &nbsp<span style="color: white">TRUEFIT</span><br>2019-2020</h1></center>
+	<form action="/html stuff/fitness.html" name="myForm" onsubmit="return validateForm()">
+		<center>
+		<table>
+			<tr>
+				<td>First Name :
+			    &nbsp &nbsp &nbsp<input type="text" name="fname"></td>
+            </tr>
+            <tr>
+            	<td>Last Name :
+            	&nbsp &nbsp &nbsp <input type="text"></td></tr>
+            	<tr>
+            		<td>Gender :
+            		 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input type="checkbox">Male &nbsp &nbsp <input type="checkbox">Female</td>
+            	</tr>
+            <tr>
+                <td>E-mail Address :
+                <input type="text">
+                </td>
+            </tr>
+            <tr>
+            	<td>Membership Duration :
+            	<input type="radio">3 Months<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                <input type="radio">6 Months<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                <input type="radio">12 Months
+            </td>
+            </tr>
+            <tr>
+            	<td>
+            		<center>
+            		<input type="submit" value="Submit">
+            	</center>
+            	</td>
+            </tr>
+            
+		</table>
+	</center>
+	</form>
+   <script type="text/javascript">
+   	function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+   </script>
+</body>
+</html>
